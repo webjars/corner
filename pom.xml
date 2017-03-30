@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>corner</artifactId>
-    <version>82114d5-SNAPSHOT</version>
+    <version>82114d5</version>
     <name>jQuery Corner Plugin</name>
     <description>WebJar for jQuery Corner Plugin</description>
     <url>http://webjars.org</url>
@@ -58,7 +58,7 @@
         <url>http://github.com/webjars/corner</url>
         <connection>scm:git:https://github.com/webjars/corner.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/corner.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>corner-82114d5</tag>
     </scm>
     
     <dependencies>
@@ -95,13 +95,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.commit}"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.commit}" />
                                 </move>
                             </target>
                         </configuration>
