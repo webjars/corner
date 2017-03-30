@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>corner</artifactId>
-    <version>82114d5</version>
+    <version>0-SNAPSHOT</version>
     <name>jQuery Corner Plugin</name>
     <description>WebJar for jQuery Corner Plugin</description>
     <url>http://webjars.org</url>
@@ -58,7 +58,7 @@
         <url>http://github.com/webjars/corner</url>
         <connection>scm:git:https://github.com/webjars/corner.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/corner.git</developerConnection>
-        <tag>corner-82114d5</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
